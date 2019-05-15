@@ -3,6 +3,7 @@
         <search-from-select @optionWasChanged="optionWasChanged($event)"></search-from-select>
         <template v-if="loadedInput === 'Номер детали'">
             <search-by-number @searchText="searchText = $event" />
+            <a class="search__btn-search" :href="`https://www.tstarter.ru/store/?noScroll=true&searchInput=${searchText}&searchType=1`">Найти</a>
         </template>
         <template v-else-if="loadedInput === 'Марка'">
             <search-by-model />
@@ -10,10 +11,8 @@
         </template>
         <template v-else-if="loadedInput === 'VIN - номер'">
             <search-by-vin @searchText="searchText = $event" />
-        </template>
-        <!-- <router-link v-if="loadedInput !== 'Марка'" :to="searchLink"> -->
             <button type="button" class="search__btn-search">Найти</button>
-        <!-- </router-link> -->
+        </template>
     </form>
 </template>
 

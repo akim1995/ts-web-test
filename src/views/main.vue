@@ -77,5 +77,5 @@ export default class Main extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
 </style>

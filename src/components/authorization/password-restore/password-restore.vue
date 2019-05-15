@@ -75,6 +75,6 @@ export default class PasswordRestore extends mixins(ClosablePopup) {
 }
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
 @import "password-restore-styles.scss";
 </style>

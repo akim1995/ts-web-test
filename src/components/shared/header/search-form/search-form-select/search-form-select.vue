@@ -7,8 +7,11 @@
             }"
             class="search-form-select"
             :class="{ active: isOpen }"
-            @click="switchOpened"
         >
+            <!-- add click event to div above -->
+            <!-- @click="switchOpened" -->
+            <!-- uncoment search-form-select__text:after -->
+
             <div class="search-form-select__selected">
                 <div class="search-form-select__icon">
                     {{ icon }}
