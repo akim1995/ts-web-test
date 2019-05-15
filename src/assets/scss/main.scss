@@ -1,0 +1,10 @@
+// Read it before you start work with styles ->>> https://smacss.com/
+
+// vendors
+@import 'vendors/index';  
+
+// own styles
+@import 'base/index';       
+@import 'mixins/index';       
+@import 'layout/index';    
+@import 'components/index';   

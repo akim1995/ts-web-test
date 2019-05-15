@@ -1,0 +1,22 @@
+// all media query styles that logical isn't okay for components or modules
+
+@media (max-width: 1200px) {
+    
+    .btn-group-column {
+        display: flex;
+        flex-direction: column;
+        button {
+            border-radius: 5px;
+            margin-bottom: 4px;
+            line-height: 20px;
+            font-size: 14px;
+        }
+    }
+    
+    .btn-block-mobile {
+        width: 100%;
+    }
+    
+}
+
+

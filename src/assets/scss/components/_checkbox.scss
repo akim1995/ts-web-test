@@ -1,0 +1,41 @@
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &-input {
+        color: $malachite;
+        margin-bottom: 0;
+        min-height: 1rem;
+        cursor: pointer;
+        .fill-control-input {
+            display: none;
+            &:checked~.fill-control-indicator {
+                background-color: $malachite;
+                border-color: $malachite;
+                background-size: 60%;
+            }
+        }
+        .fill-control-indicator {
+            border-radius: 3px;
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            transition: 0.3s;
+            background: $malachite;
+            background-size: 0%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+        }
+    }
+    &-label {
+        padding-top: 2px;
+        padding-left: 22px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}

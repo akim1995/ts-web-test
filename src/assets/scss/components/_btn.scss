@@ -1,0 +1,114 @@
+$btn-font-weight: 600;
+$btn-border-width: 0;
+$btn-border-radius: 4px;
+$btn-font-size: 17px;
+// .btn {
+//     height: 48px;
+//     border-radius: 4px;
+//     font-size: 17px;
+//     font-weight: 600;
+//     line-height: 1.41;
+//     color: $black;
+//     border-width: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 0 24px;
+//     font-family: 'Exo 2';
+// }
+
+
+
+.btn {
+  display: inline-block;
+  height: 40px;
+  box-sizing: border-box;
+  font-weight: $btn-font-weight;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0 16px;
+  border: none;
+  border-radius: $btn-border-radius;
+  line-height: 38px;
+  padding-bottom: 2px;
+  font-size: $btn-font-size;
+  font-family: 'Exo 2';
+  color: $black;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.194378);
+  &-square {
+    border-radius: 0;
+  }
+  &-sm-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0 !important;
+  }
+  &-md {
+    font-size: $btn-font-size + 1;
+    height: 48px;
+    line-height: 46px;
+    padding-bottom: 2px;
+  }
+  &-lg {
+    font-size: $btn-font-size + 4;
+    height: 64px;
+    line-height: 62px;
+    padding-bottom: 2px;
+  }
+  &-outline  {
+    border: 1px solid gray;
+    border: 1px solid #D2D2D2;
+    background-color: white;
+    box-shadow: none;
+    &:hover, &:focus {
+      border-color: #a3a3a2;
+    }
+    &:active, .active {
+      background-color:#d2d2d2;
+    }
+    &.disabled, &:disabled {
+      color: #a3a3a2;
+      cursor: default;
+    }
+  }
+  &-shadow {
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    &:active, &.active {
+      background-color:#d2d2d2;
+    }
+  }
+  &-yellow {
+    background: linear-gradient(180deg, #FFD600 4.1%, #FFC600 100%);
+    border: none;
+    &:hover, &:focus {
+      background: linear-gradient(180deg, #FFE200 7.44%, #FFCF00 100%);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.194378), 0px 1px 0px #E2AA01;
+    }
+    &:active, .active {
+      background: linear-gradient(0deg, #FFB300 3.62%, #FFBC00 95.9%);
+    }
+  }
+}
+
+
+
+// .btn-outline {
+//     border: 1px solid $alto-approx;
+//     box-sizing: border-box;
+//     border-radius: 4px;
+// }
+
+// .btn-orange {
+//     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19), 0 1px 0 0 $tangerine-approx;
+//     background-image: linear-gradient(to bottom, $gold-approx, $supernova-approx);
+// }
+
+.btn-block {
+    width: 100%;
+}
+

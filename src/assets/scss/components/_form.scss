@@ -1,0 +1,78 @@
+.form-group {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    .label {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+    .big-label {
+        font-weight: bold;
+        line-height: 24px;
+        font-size: 16px;
+        color: $black;
+    }
+    .mobile-top-label {
+        margin-bottom: 3px;
+    }
+    .green-link {
+        font-weight: bold;
+        line-height: 24px;
+        font-size: 16px;
+        color: $malachite;        
+    }
+    .two-selectors {
+        display: flex;
+        .first-selector {
+            margin-right: 8px;
+            width: 30%;
+        }
+        .second-selector {
+            width: 70%;
+        }
+    }
+    
+}
+
+.form-control {
+    border-radius: 2px;
+    padding: 0.675rem .75rem;
+    border-width: 0;
+    border: 1px solid $alto-approx;
+    background-color: $white;
+    width: 100%;
+    height: auto !important; // bitrix style overwrite
+    &:focus {
+        border-color: $malachite; // bitrix style overwrite
+    }
+}
+
+.invalid-text {        
+    width: 100%;
+    padding-top: 5px;
+    font-size: 80%;
+    color: $punch-approx;
+    padding-left: 5px;
+    line-height: 15px;
+    margin-bottom: -10px;
+}
+.invalid-input {
+    border: 1.5px solid;
+    border-color: $punch-approx;    
+    &:focus {
+        border-color: $punch-approx;    
+        outline: none;
+    }
+}
+
+.form-control-lg {
+    @extend .form-control;
+    line-height: 24px;
+}
+
+::placeholder {
+    opacity: .5;
+}

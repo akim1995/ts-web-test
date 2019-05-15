@@ -1,0 +1,75 @@
+.request-call-content {
+    width: 50% !important;
+    .title {
+        font-family: 'Exo 2';
+        font-weight: bold;
+        line-height: 32px;
+        font-size: 24px;
+        color: $black;
+        padding: 26px 66px 19px;
+    }
+    .we-will-call-you {
+        padding-bottom: 11px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .available-managers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .manager {
+            background-position: center;
+            background-size: cover;
+        }
+        .small-manager {
+            width: 48px;
+            height: 48px;
+        }
+        .big-manager {
+            width: 64px;
+            height: 64px;
+            margin: 0 16px;
+        }
+        .manager-1 {
+            background-image: url('https://i.ibb.co/M9MtpqP/manager-1.png');
+        }
+        .manager-2 {
+            background-image: url('https://i.ibb.co/0hZtPrP/manager-2.png');
+        }
+        .manager-3 {
+            background-image: url('https://i.ibb.co/njrgRzP/user-example.png');
+        }
+    }
+    .manager-2-info {
+        padding-top: 8px;
+        padding-bottom: 44px;
+        .name {
+            font-weight: bold;
+            line-height: 24px;
+            font-size: 16px;
+        }
+        .company {
+            line-height: 14px;
+            font-size: 12px;
+            color: $bold-dove-gray;
+        }
+    }
+    .narrow-form {
+        padding: 0 76px 22px;
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .request-call-content {
+        width: 100% !important;
+        margin: 0 auto;
+        .title {            
+            padding: 42px 16px 19px;
+        }
+        .narrow-form {
+            padding: 0 16px 22px;            
+        }
+    }
+}

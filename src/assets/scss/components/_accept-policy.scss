@@ -1,0 +1,18 @@
+.accept-policy {
+    color: $star-dust;
+    line-height: 1.43;
+    margin-bottom: 16px;
+    font-size: 14px;
+    .policy-link {
+        display: inline;
+        
+        color: inherit;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1200px) {
+    .accept-policy {
+        text-align: center;
+    }
+}

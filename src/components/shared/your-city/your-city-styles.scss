@@ -1,0 +1,56 @@
+.your-city {
+    position: absolute;
+    background:  $white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30214);
+    top: 24px;
+    left: 24px;
+    padding: 21px 24px 16px;
+    z-index: 1000;
+    .question,
+    .answer {
+        font-weight: bold;
+        line-height: 24px;
+        font-size: 16px;
+        color: $black;
+    }
+    .question {
+        font-family: "PT Sans";
+        margin-bottom: 10px;
+    }
+    .answer {
+        font-family: "Exo 2";
+        display: flex;
+        .btn {
+            border: 1px solid $alto-approx;
+            border-radius: 4px;
+            height: 40px;
+            padding: 7px 16px;
+            &:first-child {
+                margin-right: 8px;
+                width: 102px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .your-city {
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%);
+        width: calc(100% - 16px);
+        .answer {
+            display: flex;
+            justify-content: center;
+            .btn {
+                padding: 7px 11px;
+                &:first-child {
+                    min-width: 101px;
+                }
+                &:last-child {
+                    min-width: 147px;                    
+                }
+            }
+        }
+    }
+}

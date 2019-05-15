@@ -1,0 +1,68 @@
+{
+  "name": "transtarter-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --dest ./dist/app",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit || exit 0",
+    "test:unit:debug": "node --inspect-brk ./node_modules/@vue/cli-service/bin/vue-cli-service.js test:unit --runInBand",
+    "test:e2e:all": "testcafe all ./tests/e2e/*.test.js --app \"npm run serve  -- --mode staging\" --app-init-delay 10000",
+    "test:e2e": "testcafe chrome ./tests/e2e/*.test.js --app \"npm run serve  -- --mode staging\" --app-init-delay 10000",
+    "wc": "vue-cli-service build --target wc --name ts-ui ./src/components/**/*.vue --mode production --dest ./dist/wc",
+    "wc-unix": "vue-cli-service build --target wc --name ts-ui './src/components/**/*.vue' --mode production --dest ./dist/wc"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "faker": "^4.1.0",
+    "oidc-client": "^1.6.1",
+    "vue": "^2.5.21",
+    "vue-carousel": "^0.17.0",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-typescript": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/eslint-config-typescript": "^3.2.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "@vue/web-component-wrapper": "^1.2.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "faker": "^4.1.0",
+    "lint-staged": "^8.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "sinon": "^7.3.1",
+    "testcafe": "^1.0.1",
+    "testcafe-vue-selectors": "^3.0.0",
+    "ts-jest": "^23.0.0",
+    "typescript": "~3.1.1",
+    "vue-template-compiler": "^2.5.21",
+    "vuex-module-decorators": "^0.9.7"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

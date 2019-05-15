@@ -1,0 +1,36 @@
+.btn-group {
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 16px;
+    button {
+        background-color: $white;        
+        border: 1px solid $alto-approx;
+        color: $black;
+        padding: 10px 24px;        
+        cursor: pointer;        
+        float: left;        
+        &:not(:last-child) {
+            border-right: none;            
+        }
+        &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &:active {
+            background-color: $gallery-approx;
+        }
+    }
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .active {
+        background-color: $malachite;
+        color: white;
+    }
+}

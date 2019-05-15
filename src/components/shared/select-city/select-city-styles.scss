@@ -1,0 +1,59 @@
+.select-city {
+    position: absolute;
+    background: $white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30214);
+    top: 24px;
+    left: 24px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    width: 305px;
+    .tip {
+        margin: 21px auto 11px;
+    }
+    .cities {
+        .city {
+            text-align: left;
+            padding: 0 32px;
+            height: 40px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                background-color: $hint-of-green;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 8px;
+                    top: 14px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.41356 3.93717L0 5.35203L5.79663 11.1433L15.4482 1.4081L14.0279 0L5.78986 8.30945L1.41356 3.93717Z' fill='%230CB520'/%3E%3C/svg%3E%0A");
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 16px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+    .city-select-tip {
+        line-height: 20px;
+        font-size: 14px;
+        color: $star-dust;
+        text-align: left;
+        padding: 19px 16px 13px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .select-city {
+        width: calc(100% - 16px);
+        margin: 0 auto;
+        left: 50%;
+        transform: translate(-50%);
+        top: 40px;
+    }
+}

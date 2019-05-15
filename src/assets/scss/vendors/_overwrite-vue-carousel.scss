@@ -1,0 +1,14 @@
+.VueCarousel-pagination {    
+    position: absolute;
+    bottom: 5px;
+
+    .VueCarousel-dot {
+        width: 4px !important;
+        height: 4px !important;
+        background-color: rgba(50, 50, 48, .2) !important;
+    }
+
+    .VueCarousel-dot--active {
+        background-color: #323230 !important;
+    }
+}
